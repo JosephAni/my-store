@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 
 export default function Home({ products }) {
   const [phrase, setPhrase] = useState('')
-
   const categoriesNames = [...new Set(products.map((p) => p.category))]
 
   if (phrase) {
